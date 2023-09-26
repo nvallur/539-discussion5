@@ -40,3 +40,22 @@ body{
     margin-bottom: 10px;
     text-align: center;
  }
+
+.gallery {
+   display: grid;
+   grid-template-columns: 250px 250px 250px;
+   border: 3px dotted purple;
+   border-width: 0.9vw;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.gallery img {
+   width: 250px;
+   border: 3px dotted blue;
+}
+
+.gallery img:last-child {
+   grid-column-start: 1;
+   grid-column-end: span 3;
+}
